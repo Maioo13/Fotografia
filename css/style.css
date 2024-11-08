@@ -1,0 +1,225 @@
+/* Stili degli elementi base della pagina */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+body {
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+}
+
+/* Stile della navbar */
+
+.navbar {
+    position: fixed;
+    top: 0px;
+    left: -80px;
+    width: 92%;
+    padding: 20px 100px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo_nav {
+    height: 10vw;
+}
+
+.menu a {
+    position: relative;
+    font-size: 3.2vw;
+    color: black;
+    font-weight: 550;
+    text-decoration: none;
+    margin-left: 1.6vw;
+}
+
+.menu a::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 0.4vw;
+    background: black;
+    transition: 0.25s;
+}
+
+.menu a:hover::before{
+    width: 100%;
+}
+
+/* Testo e foto nel banner */
+
+.banner {
+    position: relative;
+    width: 80%;
+    left: 10%;
+    top: 12%;
+    padding: 4vw;
+}
+
+.me {
+    float: left;
+    width: 40%;
+}
+
+.text_ban {
+    left: 4vw;
+    font-size: 3.4vw;
+    text-align: center;
+}
+
+/* Banner2 */
+
+.text {
+    padding: 4vw;
+    font-size: 3vw;
+    text-align: justify;
+}
+
+.esempio {
+    position: relative;
+    width: 80%;
+    left: 13%;
+    top: 12%;
+    padding: 4vw;
+}
+
+.foto_esempio {
+    height: 50vw;
+}
+
+/* Bottone */
+
+.button_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.button {
+    background-color: #9C9C9C;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3.2vw;
+    font-size: 3.6vw;
+    cursor: pointer;
+    width: auto;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Spacer */
+
+.spacer1 {
+    font-size: 10vw;
+}
+
+.spacer2 {
+    font-size: 20vw;
+}
+
+/* Carosello immagini*/
+
+.griglia {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+.slide img {
+    transition: transform 0.3s ease-in-out;
+    width: 45vw;
+}
+
+.slide img:hover {
+    transform: scale(1.08);
+}
+
+/* Form contatti */
+
+.contatti {
+    width: 80%;
+    align-items: center;
+    margin-left: 8%;
+}
+
+h2{
+    position: relative;
+    padding: 0 0 10px;
+    margin-bottom: 4vw;
+}
+
+h2:after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+    background-color: #9C9C9C;
+}
+
+.campo{
+    width: 100%;
+    border: 2px solid rgba(0, 0, 0, 0);
+    outline: none;
+    background-color: rgba(230, 230, 230, 0.6);
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    margin-bottom: 22px;
+    transition: .3s;
+}
+
+.campo:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+textarea{
+    min-height: 150px;
+}
+
+.btn{
+    width: 104%;
+    padding: 0.5rem 1rem;
+    background-color: #222222;
+    color: #fff;
+    font-size: 1.1rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btn:hover{
+    background-color: #9C9C9C;
+}
+
+.campo:focus{
+    border: 2px solid #9C9C9C;
+    background-color: #fff;
+}
+
+.social{
+    justify-content: space-evenly;
+    margin-left: 25%;
+}
